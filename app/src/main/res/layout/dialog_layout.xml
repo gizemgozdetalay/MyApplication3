@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_gravity="center_vertical"
+    android:background="#9fbf53">
+    <LinearLayout
+        android:id="@+id/choiceLayout"
+        android:orientation="horizontal"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+
+        >
+
+        <ImageView
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:id="@+id/button"
+            android:src="@drawable/dial"
+            android:layout_gravity="center_vertical|left" />
+
+        <ImageView
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:src="@drawable/msg"
+            android:id="@+id/button2"
+            android:layout_gravity="center_vertical" />
+
+
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="İstatistik"
+            android:id="@+id/button3"
+            android:layout_gravity="center_vertical|right" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:id="@+id/sendlayout"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:visibility="invisible">
+
+        <EditText
+            android:layout_width="190dp"
+            android:layout_height="wrap_content"
+            android:text="Write your message here!"
+            android:id="@+id/editText"/>
+        <Button
+            android:layout_width="85dp"
+            android:layout_height="wrap_content"
+            android:text="Send"
+            android:id="@+id/sentButton"/>
+    </LinearLayout>
+
+</RelativeLayout>
